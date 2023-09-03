@@ -15,6 +15,7 @@ module "prd_backup_vault" {
 
 module "prd_blob_backup_policy" {
   source      = "./modules/backup_policy"
+  resource_group_name = data.azurerm_resource_group.rg.name
   environment = "prd"
   policy_name = "blobvaultedpolicy"
   duration    = "P7D"
@@ -31,6 +32,7 @@ module "ppd_backup_vault" {
 
 module "ppd_blob_backup_policy" {
   source      = "./modules/backup_policy"
+  resource_group_name = data.azurerm_resource_group.rg.name
   environment = "ppd"
   policy_name = "blobvaultedpolicy"
   duration    = "P7D"

@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group_template_deployment" "blob_backup_policy" {
   name                = "blob-backup-policy-${var.environment}"
-  resource_group_name = "AzureBackup"
+  resource_group_name = var.resource_group_name
   deployment_mode     = "Incremental"
   parameters_content = jsonencode({
     "policy_name" = {

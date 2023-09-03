@@ -15,3 +15,6 @@ variable "duration" {
   description = "duration of backup retention"
 }
 
+variable "resource_group_name" {
+  description = "The resource group where to deploy the backup vault"
+}
