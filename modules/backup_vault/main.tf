@@ -4,6 +4,7 @@ resource "azurerm_data_protection_backup_vault" "backup_vault" {
   location            = var.location
   datastore_type      = "VaultStore"
   redundancy          = "LocallyRedundant"
+  #immutability        = "Locked" or "Unlocked" or "Disabled"
   identity {
     type = "SystemAssigned"
   }
