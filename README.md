@@ -1,6 +1,6 @@
 # Terraform Azure Backup Configuration
 
-This Terraform configuration allows you to set up Azure Backup resources, including a backup vault and backup policies, using the AzureRM provider. It's designed to create resources in multiple environments within a specified Azure resource group.
+This Terraform configuration allows you to set up Azure Backup resources, including a backup vault and backup policies, using the AzureRM provider for the vaulted backup policies since it's still on preview (no module available). It's designed to create resources in multiple environments within a specified Azure resource group.
 
 ## Prerequisites
 
