@@ -39,8 +39,6 @@ module "ppd_blob_backup_policy" {
 
 
 
-
-
 # module "alerts" {
 #   source = "./alerts"
 #   prd_vault_name = module.prd_backup_vault.vault_name
