@@ -13,7 +13,7 @@ Before using this Terraform configuration, ensure that you have the following:
 
 This Terraform configuration is structured to create Azure Backup resources for both a production (`prd`) and pre-production (`ppd`) environment within the same Azure resource group (`AzureBackup` in this example). The configuration includes the following modules:
 
-### Azure Backup Vault
+### Azure Backup Vault 
 
 The `backup_vault` module (`./modules/backup_vault`) creates an Azure Backup vault for the specified environment. It uses the Azure Resource Manager (azurerm) provider for this task. You need to provide the following parameters:
 
